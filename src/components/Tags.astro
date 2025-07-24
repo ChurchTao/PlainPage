@@ -10,7 +10,7 @@ type Props = {
   {
     tags.map(tag => (
       <li>
-        <a href={generateURL(`/tags/${tag}/`)} transition:name={`tag-${tag}`}>
+        <a href={generateURL(`/tags/${tag}/`, undefined, true)} transition:name={`tag-${tag}`}>
           #{decodeTag(tag)}
         </a>
       </li>

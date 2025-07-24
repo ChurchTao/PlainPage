@@ -52,7 +52,7 @@ const { tag, posts } = Astro.props;
             </i>
           </span>
           <a
-            href={generateURL(`/blog/${post.id}/`)}
+            href={generateURL(`/blog/${post.id}/`, undefined, true)}
             transition:name={`post-title-${post.id}`}
           >
             {post.data.title}

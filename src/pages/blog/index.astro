@@ -20,7 +20,7 @@ const posts = (await getCollection("blog", post => !post.data.hide)).sort(
             </i>
           </span>
           <a
-            href={generateURL(`/blog/${post.id}/`)}
+            href={generateURL(`/blog/${post.id}/`, undefined, true)}
             transition:name={`post-title-${post.id}`}
           >
             {post.data.title}
